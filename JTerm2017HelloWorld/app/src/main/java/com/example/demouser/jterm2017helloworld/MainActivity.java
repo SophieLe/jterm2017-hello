@@ -26,12 +26,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ((Button)findViewById(R.id.lookupButton)).setOnClickListener(new View.OnClickListener(){
+        ((Button)findViewById(R.id.lookupButton)).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-                
+            public void onClick(View view) {
+                lookup();
+            }
+        });
         }
-    }
+
 
     public void lookup()
     {
